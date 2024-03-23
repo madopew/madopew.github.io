@@ -1,0 +1,164 @@
+:root {
+    --background: #121212;
+    --background-elevation-1: #1d1d1d;
+    --background-elevation-2: #212121;
+    --background-elevation-3: #252525;
+    --text: #f5f5f5;
+    --text-darker: #888888;
+}
+
+::selection {
+    background: var(--text);
+    color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: Roboto, -apple-system, system-ui, sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background: var(--background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 900px;
+    height: 100%;
+
+    padding: 10% 5%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container .heading {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 7em;
+}
+
+.container .heading .avatar {
+    margin-bottom: 2em;
+}
+
+.container .heading .avatar img {
+    width: 130px;
+    height: auto;
+
+    border-radius: 100%;
+}
+
+.container .heading .greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .heading .greeting * {
+    line-height: 1.1;
+}
+
+.container .heading .greeting h1 {
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container .heading .greeting p {
+    color: var(--text-darker);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container .links {
+    margin-bottom: 2em;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .links h2 {
+    margin-bottom: 0.3em;
+
+    color: var(--text-darker);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.container .links .links-container {
+    background: var(--background-elevation-1);
+    border-radius: 7px;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container .links .links-container a {
+    height: 5vh;
+    background: var(--background-elevation-2);
+    border-radius: 10px;
+    margin-bottom: 1em;
+
+    color: var(--text);
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .links .links-container a:hover {
+    background: var(--background-elevation-3);
+}
+
+.container .links .links-container a:last-child {
+    margin-bottom: 0;
+}
+
+.container .footer a {
+    color: var(--text-darker);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.container .footer a:hover {
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .container .heading .avatar img {
+        width: 90px;
+    }
+
+    .container .heading .greeting h1 {
+        font-size: 1.5rem;
+    }
+
+    .container .heading .greeting p {
+        font-size: 1.2rem;
+    }
+
+    .container .heading {
+        margin-bottom: 3em;
+    }
+}
