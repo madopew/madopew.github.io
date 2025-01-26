@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-06B1F7Z7KH"></script>
@@ -10,6 +9,7 @@
         function gtag() {
             dataLayer.push(arguments);
         }
+
         gtag('js', new Date());
 
         gtag('config', 'G-06B1F7Z7KH');
@@ -19,24 +19,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal website of Bakyt Madi">
     <title>madi</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@0,400;0,700&display=swap" rel="stylesheet">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
+<div class="holder">
+    <div class="holder-hole"></div>
+    <div class="holder-overlay"></div>
     <div class="card">
-        <div class="top">
-            <div class="inside"></div>
+        <div class="card-overlay"></div>
+        <div class="card-top">
+            <h4>PASS <span>Codefolio</span></h4>
+            <h2>employee card</h2>
         </div>
-        <div class="middle">
-            <h1>madi bakyt</h1>
-            <h2>full-stack engineer</h2>
-        </div>
-        <div class="bottom">
-            <a href="mailto:bakyt.madi.work@gmail.com">bakyt.madi.work@gmail.com</a>
+        <div class="card-middle">
+            <div class="card-middle-left">
+                <div class="avatar">
+                    <img src="img/id_photo_no_bck.png" alt="id photo of me">
+                </div>
+            </div>
+            <div class="card-middle-right">
+                <div class="chip"></div>
+                <div class="card-middle-right-top">
+                    <h3>name, surname</h3>
+                    <h1>Madi BAKYT</h1>
+                </div>
+                <div class="card-middle-right-middle">
+                    <h3>active since</h3>
+                    <h1>07 2020</h1>
+                    <h3>telegram</h3>
+                    <a href="https://t.me/madopew" target="_blank">@madopew</a>
+                    <h3>email</h3>
+                    <a href="mailto:bakyt.madi.work@gmail.com">bakyt.madi.work@gmail.com</a>
+                </div>
+                <div class="card-middle-right-bottom">
+                    <h3>position</h3>
+                    <h1>full-stack engineer</h1>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 </body>
-
 </html>

@@ -1,7 +1,7 @@
 {
    "name": "Bakyt Madi",
    "short_name": "Bakyt Madi",
-   "theme_color": "#3e84de",
+   "theme_color": "#121212",
    "icons": [{
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
@@ -11,6 +11,6 @@
       "sizes": "512x512",
       "type": "image/png"
    }],
-   "background_color": "#3e84de",
+   "background_color": "#121212",
    "display": "standalone"
 }
